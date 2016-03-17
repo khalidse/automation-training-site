@@ -6,7 +6,7 @@ var express  = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app      = express();
-var port     = process.env.PORT || 80;
+var port     =  80;
 var path = require('path');
 
 
