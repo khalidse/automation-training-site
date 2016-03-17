@@ -1,0 +1,287 @@
+			<!-- views/profile.ejs -->
+			<!doctype html>
+			<html>
+			<head>
+				<title>Html - html elements</title>
+				<link rel="stylesheet" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome.css">
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+				<style>
+					.navbar-static-top {
+			  margin-bottom:20px;
+			}
+
+			i {
+			  font-size:18px;
+			}
+
+			footer {
+			  margin-top:20px;
+			  padding-top:20px;
+			  padding-bottom:20px;
+			  background-color:#efefef;
+			  margin: 0px;
+			}
+
+      .selected{
+        background-color: #eeeeee;
+        border-right: solid 3px #666;
+
+
+      }
+
+      #elements-wrapper{
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        min-height: 500px
+      }
+
+      #play-result{padding: 20px}
+      .red {border:2px solid #FF0000;}
+				</style>
+
+
+				<!-- Header -->
+			<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			          <span class="icon-toggle"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i>  Automation Training site</a>
+			    </div>
+			    <div class="navbar-collapse collapse">
+			      <ul class="nav navbar-nav navbar-right">
+
+
+			      </ul>
+			    </div>
+			  </div><!-- /container -->
+			</div>
+			<!-- /Header -->
+			</head>
+			<body>
+			<!-- Main -->
+			<div class="container">
+
+			  <!-- upper section -->
+			  <div class="row">
+				<div class="col-sm-3">
+			     <!-- left -->
+            <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+            <hr>
+
+						<ul class="nav nav-stacked">
+	                  <li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+	                   <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+	 									<hr></hr>
+	 									<h5>Level one</h5>
+	 									<hr></hr>
+	                   <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+	                   <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+	                   <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+	                   <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+	                   <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+	                   <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+	 									<hr></hr>
+	 									<h5>Level two</h5>
+	 									<hr></hr>
+	 									<li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+	 									<li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+	 									<li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+	 									<li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+	 									<li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+	 									<hr></hr>
+	 									<h5>Level three</h5>
+	 									<hr></hr>
+	 									<li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+	 									<li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+	 									<li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+	 									<li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+	 									<li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+	 									<hr></hr>
+	                   <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+	                   <hr>
+	                   <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+	                   <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+	                   <hr>
+	                   <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+	               </ul>
+            <hr>
+
+			  	</div><!-- /span-3 -->
+			    <div class="col-sm-9">
+
+			      <!-- column 2 -->
+			       <h3><i class="fa fa-link"></i> practice -
+              <span class="label label-info">html elements</span>
+              <span class="label label-info">css selectors</span>
+			       </h3>
+
+			       <hr>
+
+				   <div class="row">
+				   	<div class="alert alert-info" role="alert"><i class="fa fa-comments"></i> play with html elements and css selectors</div>
+
+
+					<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">play with elements <a href="" id="refresh"><code class="pull-right"><i class="fa fa-refresh"></i> reset elements</code></a></h3>
+				  </div>
+				  <div class="panel-body">
+            <code class="col-sm-17">
+              catch element using css selector:
+              </code><strong id="play-result"></strong>
+              <br><br>
+
+
+                <div class="col-sm-16">
+                 <button  id = "find-selector" class="btn col-sm-3">Find Element</button>
+                 <span class="col-sm-8"> <textarea id="css-selector" placeholder="css selector" class="form-control"></textarea></span>
+              </div>
+
+
+
+
+
+    			</div></div>
+
+          <!-- first level -->
+          <div id="play-container">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">level one</h3>
+          </div>
+          <div class="panel-body">
+                <div class="col-sm-16">
+
+                <div class="col-sm-4">
+                  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                  <button id="btn-left" type="button" class="btn btn-default">Left</button>
+                  <button id="btn-center" type="button" class="btn btn-default">Middle</button>
+                  <button id="btn-right" type="button" class="btn btn-default">Right</button> </div>
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button">
+                    Messages <span class="badge">4</span>
+                  </button>
+                </div>
+                <div class="col-sm-4">
+                 <a href="#" class="thumbnail"> <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxNTMyNGY2MTcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE1MzI0ZjYxNyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;"> </a>
+                 </div>
+              </div>
+
+
+
+
+
+          </div></div>
+
+          <!-- end level -->
+
+          <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title">level two</h3>
+          </div>
+          <div class="col-sm-14">
+          <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </li>
+              </ul>
+              </div>
+
+
+             <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+              </ol>
+
+
+               <div class="jumbotron"> <h1>Hello, world!</h1> <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> </div>
+
+          </div></div>
+          <!-- end level -->
+
+          </div>
+          <!-- end play cont -->
+
+
+          <script type="text/javascript">
+          $(document).ready(function(){
+
+
+            // catch an element
+
+             $('#find-selector').click(function(){
+              $selector = $('#css-selector').val();
+              $playresult = $('#play-result');
+                if($selector.length > 0 && $($selector).length > 0){
+                  $playresult.html('<i class="fa fa-thumbs-up"></i> Great You found The Element');
+                   $('.red').removeClass('red');
+                  $('#play-container ' + $selector).addClass('red');
+                   //location.reload();
+                }else if($selector.length > 1){
+                  $playresult.html('<i class="fa fa-thumbs-down"></i> No Element With This selector ! ' + $selector);
+                }else{
+                  $playresult.html('<i class="fa fa-times-circle"></i> Fill The Css Selector Field First !');
+                }
+
+
+
+             }); // end find element
+
+             $('#refresh').click(function(){
+              location.reload();
+             });
+          });
+          </script>
+			<!-- end elements -->
+
+<!-- end level -->
+
+
+
+<script type="text/javascript">
+
+
+// make tab selected
+
+       $(document).ready(function(){
+        $links = $('.nav-stacked li a');
+        var url = (window.location.href).split('/');
+        $links.each(function(link){
+          if( ($(this).attr('href')) == url[3] ){
+            $(this).addClass('selected');
+          }
+        });
+       });
+
+</script>
+    				</div>
+				</div>
+<!-- end level -->
+
+		  		</div><!--/row-->
+
+
+
+			 	 </div><!--/row-->
+			  	<!-- /upper section -->
+
+
+			        </div><!--/panel content-->
+			      </div><!--/panel-->
+				</div><!--/container-->
+			<!-- /Main -->
+			<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><strong>Aspire.jo</strong></a></footer>
+			</body>
+
+			</html>

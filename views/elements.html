@@ -1,0 +1,359 @@
+			<!-- views/profile.ejs -->
+			<!doctype html>
+			<html>
+			<head>
+				<title>Html - html elements</title>
+				<link rel="stylesheet" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome.css">
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+				<style>
+					.navbar-static-top {
+			  margin-bottom:20px;
+			}
+
+			i {
+			  font-size:18px;
+			}
+
+			footer {
+			  margin-top:20px;
+			  padding-top:20px;
+			  padding-bottom:20px;
+			  background-color:#efefef;
+			  margin: 0px;
+			}
+
+      .selected{
+        background-color: #eeeeee;
+        border-right: solid 3px #666;
+
+      }
+
+      pre{
+        height: 200px !important;
+        padding: 0 !important;
+            line-height: 1 !important;
+
+      }
+				</style>
+
+
+				<!-- Header -->
+			<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			          <span class="icon-toggle"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i>  Automation Training site</a>
+			    </div>
+			    <div class="navbar-collapse collapse">
+			      <ul class="nav navbar-nav navbar-right">
+
+
+			      </ul>
+			    </div>
+			  </div><!-- /container -->
+			</div>
+			<!-- /Header -->
+			</head>
+			<body>
+			<!-- Main -->
+			<div class="container">
+
+			  <!-- upper section -->
+			  <div class="row">
+				<div class="col-sm-3">
+			     <!-- left -->
+            <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+            <hr>
+
+						<ul class="nav nav-stacked">
+										<li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+										 <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+										<hr></hr>
+										<h5>Level one</h5>
+										<hr></hr>
+										 <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										 <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+										 <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+										<hr></hr>
+										<h5>Level two</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										<li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										<h5>Level three</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+										<li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										 <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+										 <hr>
+										 <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+										 <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+										 <hr>
+										 <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+								 </ul>
+
+            <hr>
+
+			  	</div><!-- /span-3 -->
+			    <div class="col-sm-9">
+
+			      <!-- column 2 -->
+			       <h3><i class="fa fa-link"></i> Html Elements (overview) -
+              <span class="label label-info">html elements</span>
+              <span class="label label-info">html tags</span>
+			       </h3>
+
+			       <hr>
+
+				   <div class="row">
+				   	<div class="alert alert-info" role="alert"><i class="fa fa-comments"></i> html elements reference</div>
+
+
+					<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">common html elements</h3>
+				  </div>
+				  <div class="panel-body">
+            <code>
+              HTML elements are written with a start tag, with an end tag, with the content in between:
+              <xmp><tagname>content</tagname> </xmp>
+            </code>
+			       <table class="table">
+              <thead>
+               <tr>
+                <th>#</th>
+                 <th>Elements/Tags/Attribute</th>
+                  <th>Live Example</th>
+                  <th>Source Code</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Heading</td>
+                    <td>
+                          <h1>Heading</h1>
+                          <h2>Heading</h2>
+                          <h3>Heading</h3>
+                    </td>
+                     <td><code class="col-sm-6">html
+                          <pre ><xmp>
+                          <a href="google.com">
+                           link
+                         </a>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre ><xmp>
+                          h1, .h1 {
+                              font-size: 36px;
+                          }
+                           </xmp></pre></code>
+
+
+                           </td>
+
+                      </tr>
+                       <tr> <th scope="row">2</th>
+                        <td>label</td>
+                        <td><label> label </label></td>
+                         <td>
+                          <code class="col-sm-6">html
+                          <pre ><xmp>
+                          <label> label </label>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre><xmp>
+                          label {
+                          display: inline-block;
+                          margin-bottom: 5px;
+                          font-weight: bold;
+                          }
+                           </xmp></pre></code>
+
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">3</th>
+                        <td>link</td>
+                        <td><a href="google.com">
+                          link
+                        </a></td>
+                         <td><code class="col-sm-6">html
+                          <pre ><xmp>
+                          <a href="google.com">
+                           link
+                         </a>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre ><xmp>
+                          a {
+                           color: #428bca;
+                          text-decoration: none;
+                          }
+                           </xmp></pre></code>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">4</th>
+                        <td>list item</td>
+                        <td><li> list item </li></td>
+                         <td>
+                          <code class="col-sm-6">html
+                          <pre ><xmp>
+                         <li> list item </li>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre><xmp>
+                          li {
+                              display: list-item;
+                          }
+                           </xmp></pre></code>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">5</th>
+                        <td>paragraph</td>
+                        <td><p> paragraph </p></td>
+                         <td>
+                          <code class="col-sm-6">html
+                          <pre ><xmp>
+                          <p> paragraph </p>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre ><xmp>
+                          p {
+                              margin: 0 0 10px;
+                          }
+                           </xmp></pre></code>
+
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">6</th>
+                        <td>button</td>
+                        <td><label> <button class="btn btn-default"> button </button> </label></td>
+                         <td>
+                          <code class="col-sm-6">html
+                          <pre ><xmp>
+                          <button>button</button>
+                        </xmp></pre></code>
+                        <code class="col-sm-6">css
+                          <pre ><xmp>
+                          .btn-default {
+                              color: #333;
+                              background-color: #fff;
+                              border-color: #ccc;
+                          }
+                           </xmp></pre></code>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">7</th>
+                        <td>input</td>
+                        <td><input placeholder="input">  </input></td>
+                         <td>
+                          <pre><xmp>
+                          <input placeholder="input">
+                            </input>
+                        </xmp></pre>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">8</th>
+                        <td>div</td>
+                        <td><div> test div </div></td>
+                         <td>
+                          <pre><xmp>
+                          <div> test div </div>
+                        </xmp></pre>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">9</th>
+                        <td>select</td>
+                        <td><select>
+                          <option> first</option>
+                          <option> second</option>
+                         </select></td>
+                         <td>
+                          <pre><xmp>
+                          <select>
+                          <option> first</option>
+                          <option> second</option>
+                         </select>
+                        </xmp></pre>
+                        </td>
+                       </tr>
+                       <tr> <th scope="row">10</th>
+                        <td><span>span</span></td>
+                        <td><span>test span</span></td>
+                         <td>
+                          <pre><xmp>
+                          <span>test span</span>
+                        </xmp></pre>
+                        </td>
+                       </tr>
+
+
+                           </tbody>
+                         </table>
+                         <h2>Reference</h2>
+                         <hr>
+            <code>more elements you will find here : </code><br><br>
+             <code><a href="http://www.w3schools.com/tags/">w3schools</a>|</code>
+             <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">mozilla</a>| </code>
+              <code><a href="https://www.codeschool.com/paths/html-css">codeschool</a> </code>|
+              <code><a href="https://www.codecademy.com/learn/web">codecademy</a> </code>
+
+    			</div></div>
+
+
+<!-- end level -->
+
+
+
+<script type="text/javascript">
+
+
+// make tab selected
+
+       $(document).ready(function(){
+        $links = $('.nav-stacked li a');
+        var url = (window.location.href).split('/');
+        $links.each(function(link){
+          if( ($(this).attr('href')) == url[3] ){
+            $(this).addClass('selected');
+          }
+        });
+       });
+
+</script>
+    				</div>
+				</div>
+<!-- end level -->
+
+		  		</div><!--/row-->
+
+
+
+			 	 </div><!--/row-->
+			  	<!-- /upper section -->
+
+
+			        </div><!--/panel content-->
+			      </div><!--/panel-->
+				</div><!--/container-->
+			<!-- /Main -->
+			<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><strong>Aspire.jo</strong></a></footer>
+			</body>
+
+			</html>

@@ -1,0 +1,224 @@
+			<!-- views/profile.ejs -->
+			<!doctype html>
+			<html>
+			<head>
+				<title>Html - tables</title>
+				<link rel="stylesheet" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome.css">
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+				<style>
+					.navbar-static-top {
+			  margin-bottom:20px;
+			}
+
+			i {
+			  font-size:18px;
+			}
+
+			footer {
+			  margin-top:20px;
+			  padding-top:20px;
+			  padding-bottom:20px;
+			  background-color:#efefef;
+			  margin: 0px;
+			}
+
+      .selected{
+        background-color: #eeeeee;
+        border-right: solid 3px #666;
+
+      }
+
+				</style>
+
+
+				<!-- Header -->
+			<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			          <span class="icon-toggle"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i>  Automation Training site</a>
+			    </div>
+			    <div class="navbar-collapse collapse">
+			      <ul class="nav navbar-nav navbar-right">
+
+
+			      </ul>
+			    </div>
+			  </div><!-- /container -->
+			</div>
+			<!-- /Header -->
+			</head>
+			<body>
+			<!-- Main -->
+			<div class="container">
+
+			  <!-- upper section -->
+			  <div class="row">
+				<div class="col-sm-3">
+			     <!-- left -->
+            <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+            <hr>
+
+						<ul class="nav nav-stacked">
+										<li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+										 <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+										<hr></hr>
+										<h5>Level one</h5>
+										<hr></hr>
+										 <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										 <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+										 <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+										<hr></hr>
+										<h5>Level two</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										<li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										<h5>Level three</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+										<li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										 <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+										 <hr>
+										 <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+										 <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+										 <hr>
+										 <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+								 </ul>
+            <hr>
+
+			  	</div><!-- /span-3 -->
+			    <div class="col-sm-9">
+
+			      <!-- column 2 -->
+			       <h3><i class="fa fa-link"></i> Tables - <span class="label label-info">tables</span>
+			       	<span class="label label-info">date</span>
+			       	<span class="label label-info">css path</span>
+			       </h3>
+
+			       <hr>
+
+				   <div class="row">
+				   	<div class="alert alert-info" role="alert"><i class="fa fa-comments"></i> when the data be a huge automation testing win <i class="fa fa-thumbs-o-up"></i></div>
+
+
+					<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">level one</h3>
+				  </div>
+				  <div class="panel-body">
+
+				 <div class="table-responsive">
+      <table id="cars" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Country of Origin</th>
+            <th colspan="5">CARS</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>korean</td>
+            <td>KIA</td>
+            <td>HYUNDAI</td>
+            <td>DAEWOO</td>
+            <td>SSANGYONG</td>
+            <td>CHERY</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>germany</td>
+            <td>BMW</td>
+            <td>MERCEDES</td>
+            <td>AUDI</td>
+            <td>GOLF</td>
+            <td>OPEL</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>japan</td>
+            <td>MAZDA</td>
+            <td>TOYOTA</td>
+            <td>NISSAN</td>
+            <td>MITSUBISHI</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+				<code id="Origin">check Country of Origin for each car</code>
+
+    			</div></div>
+
+
+<!-- end level -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+var d = new Date();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+
+var output = d.getFullYear() + '/' +
+    ((''+month).length<2 ? '0' : '') + month + '/' +
+    ((''+day).length<2 ? '0' : '') + day;
+    $('.date').each(function(){
+    	$(this).text(output);
+    });
+});
+
+// make tab selected
+
+       $(document).ready(function(){
+        $links = $('.nav-stacked li a');
+        var url = (window.location.href).split('/');
+        $links.each(function(link){
+          if( ($(this).attr('href')) == url[3] ){
+            $(this).addClass('selected');
+          }
+        });
+       });
+
+</script>
+    				</div>
+				</div>
+<!-- end level -->
+
+		  		</div><!--/row-->
+
+
+
+			 	 </div><!--/row-->
+			  	<!-- /upper section -->
+
+
+			        </div><!--/panel content-->
+			      </div><!--/panel-->
+				</div><!--/container-->
+			<!-- /Main -->
+			<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><strong>Aspire.jo</strong></a></footer>
+			</body>
+
+			</html>

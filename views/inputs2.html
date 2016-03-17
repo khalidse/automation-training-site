@@ -1,0 +1,285 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+  <title>Html - buttons</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/font-awesome.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bootstrap.min.js"></script>
+  <style>
+    .navbar-static-top {
+  margin-bottom:20px;
+}
+
+i {
+  font-size:18px;
+}
+
+footer {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+  margin: 0px;
+}
+
+.selected{
+    background-color: #eeeeee;
+    border-right: solid 3px #666;
+
+  }
+
+  div.container > div > div.col-sm-9 > div > div.panel.panel-danger > div.panel-body > div.input-group.col-sm-7 > input[type="button"]{
+     display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.428571429;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none
+  }
+  </style>
+
+
+  <!-- Header -->
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-toggle"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i>  Automation Training site</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+
+      </ul>
+    </div>
+  </div><!-- /container -->
+</div>
+<!-- /Header -->
+</head>
+<body>
+<!-- Main -->
+<div class="container">
+
+  <!-- upper section -->
+  <div class="row">
+  <div class="col-sm-3">
+      <!-- left -->
+      <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+      <hr>
+
+      <ul class="nav nav-stacked">
+              <li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+               <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+               <hr></hr>
+               <h5>Level one</h5>
+               <hr></hr>
+               <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+               <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+               <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+               <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+               <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+               <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+               <hr></hr>
+               <h5>Level two</h5>
+               <hr></hr>
+               <li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+               <li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+               <li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+               <li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+               <li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+               <hr></hr>
+               <h5>Level three</h5>
+               <hr></hr>
+               <li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+               <li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+               <li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+               <li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+               <li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+               <hr></hr>
+               <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+               <hr>
+               <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+               <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+               <hr>
+               <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+           </ul>
+
+      <hr>
+
+    </div><!-- /span-3 -->
+    <div class="col-sm-9">
+
+      <!-- column 2 -->
+       <h3><i class="fa fa-link"></i> inputs - <span class="label label-info">button</span>
+        <span class="label label-info">input</span>
+        <span class="label label-info">strong</span>
+       </h3>
+
+       <hr>
+
+     <div class="row">
+        <div class="alert alert-info" role="alert"><i class="fa fa-comments"></i> Hey can you test my calculator ? i think you can <i class="fa fa-thumbs-o-up"></i></div>
+
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Level two</h3>
+    </div>
+    <div class="panel-body">
+
+
+  <div class="input-group col-sm-3">
+        <span class="input-group-addon" id="basic-addon1">$</span>
+        <input class="form-control" placeholder="number one" aria-describedby="basic-addon1" type="text">
+        </div>
+        <div class="input-group col-sm-2">
+        <input  class="form-control" placeholder="sign" aria-describedby="basic-addon1" type="text">
+        </div>
+
+  <div class="input-group col-sm-3">
+        <span class="input-group-addon" id="basic-addon1">$</span>
+        <input class="form-control" placeholder="number two" aria-describedby="basic-addon1" type="text">
+        </div>
+
+        <div id="equal" class="input-group col-sm-1">
+        =
+        </div>
+
+        <div class="input-group col-sm-3 str">
+
+        </div>
+
+          <div class="input-group col-sm-7">
+            <br>
+        <button class="btn">Get Result</button>
+          </div>
+
+      </div>
+  </div>
+
+<!-- end level -->
+
+
+
+
+
+
+<script type="text/javascript">
+$('body').on('click', '#get-result', function(){
+  var fNumber = $('#first-number').val();
+  var sNumber = $('#second-number').val();
+  var sign = $('#sign').val();
+  if(sign == '+'){
+    $('#result').text("$ " + (parseInt(fNumber) + parseInt(sNumber)))
+  }
+   if(sign == 'x' || sign == 'X'|| sign == '*'){
+    $('#result').text("$ " + (parseInt(fNumber) * parseInt(sNumber)))
+  }
+   if(sign == '/'){
+    $('#result').text("$ " + (parseInt(fNumber) / parseInt(sNumber)))
+  }
+  if(sign == '-'){
+    $('#result').text("$ " + (parseInt(fNumber) - parseInt(sNumber)))
+  }
+    if(sign != 'x' && sign != '+' && sign != '/' && sign != 'X' && sign != '*' && sign != '-' ){
+    $('#result').text('sorry i can\'t be perfect');
+     }
+
+});
+
+$('body').on('click', '.btn', function(){
+  var fNumber = $('div.panel-body > div:nth-child(1) > input').val()
+  var sNumber = $('div.panel-body > div:nth-child(3) > input').val();
+  var sign = $('div.panel-body > div.input-group.col-sm-2 > input').val()
+  if(sign == '+'){
+    $('.str').text("$ " + (parseInt(fNumber) + parseInt(sNumber)))
+  }
+   if(sign == 'x' || sign == 'X'|| sign == '*'){
+    $('.str').text("$ " + (parseInt(fNumber) * parseInt(sNumber)))
+  }
+   if(sign == '/'){
+    // deliberate BUG :)
+    $('.str').text("$ " + (parseInt(fNumber) + parseInt(sNumber)))
+  }
+  if(sign == '-'){
+    $('.str').text("$ " + (parseInt(fNumber) - parseInt(sNumber)))
+  }
+    if(sign != 'x' && sign != '+' && sign != '/' && sign != 'X' && sign != '*' && sign != '-' ){
+    $('.str').text('sorry i can\'t be perfect');
+     }
+
+});
+
+$('body').on('click', 'input[type="button"]', function(){
+  var fNumber = $('input:nth(6)').val()
+  var sNumber = $('input:nth(8)').val()
+  var sign = $('input:nth(7)').val()
+  var cssPath = 'div.container > div > div.col-sm-9 > div > div.panel.panel-danger > div.panel-body > div.input-group.col-sm-7';
+  if(sign == '+'){
+    $(cssPath).text("$ " + (parseInt(fNumber) + parseInt(sNumber)))
+  }
+   if(sign == 'x' || sign == 'X'|| sign == '*'){
+    $(cssPath).text("$ " + (parseInt(fNumber) * parseInt(sNumber)))
+  }
+   if(sign == '/'){
+
+    $(cssPath).text("$ " + (parseInt(fNumber) / parseInt(sNumber)))
+  }
+  if(sign == '-'){
+    // deliberate BUG :)
+    $(cssPath).text("$ " + (parseInt(fNumber) * parseInt(sNumber)))
+  }
+    if(sign != 'x' && sign != '+' && sign != '/' && sign != 'X' && sign != '*' && sign != '-' ){
+    $(cssPath).text('sorry i can\'t be perfect');
+     }
+
+});
+
+// make tab selected
+
+ $(document).ready(function(){
+  $links = $('.nav-stacked li a');
+  var url = (window.location.href).split('/');
+  $links.each(function(link){
+    if( ($(this).attr('href')) == url[3] ){
+      $(this).addClass('selected');
+    }
+  });
+ });
+
+</script>
+
+    </div><!--/row-->
+
+
+
+   </div><!--/row-->
+    <!-- /upper section -->
+
+
+        </div><!--/panel content-->
+      </div><!--/panel-->
+  </div><!--/container-->
+<!-- /Main -->
+<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><strong>Aspire.jo</strong></a></footer>
+</body>
+
+</html>

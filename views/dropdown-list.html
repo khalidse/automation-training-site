@@ -1,0 +1,282 @@
+			<!-- views/profile.ejs -->
+			<!doctype html>
+			<html>
+			<head>
+				<title>Html - Dropdown lists</title>
+				<link rel="stylesheet" href="assets/bootstrap.min.css">
+				<link rel="stylesheet" href="assets/font-awesome.css">
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+
+				<style>
+					.navbar-static-top {
+			  margin-bottom:20px;
+			}
+
+			i {
+			  font-size:18px;
+			}
+
+			footer {
+			  margin-top:20px;
+			  padding-top:20px;
+			  padding-bottom:20px;
+			  background-color:#efefef;
+			  margin: 0px;
+			}
+      blockquote{
+        display: none;
+      }
+      blockquote p {font-size: 15px}
+      .h-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.h-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin: 0;
+
+    /****************
+     ** NEW STYLES **
+     ****************/
+
+    list-style: none; /** Remove list bullets */
+    width: 100%; /** Set the width to 100% of it's parent */
+    padding: 0;
+}
+
+.h-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.h-dropdown button {
+    background: #FF6223;
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+}
+
+/** List Item Styles **/
+.h-dropdown a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background: #CCCCCC;
+    color: #333333;
+}
+
+/** List Item Hover Styles **/
+.h-dropdown a:hover {
+    background: #BBBBBB;
+}
+
+.selected{
+  background-color: #eeeeee;
+  border-right: solid 3px #666;
+
+}
+				</style>
+
+
+				<!-- Header -->
+			<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			          <span class="icon-toggle"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i>  Automation Training site</a>
+			    </div>
+			    <div class="navbar-collapse collapse">
+			      <ul class="nav navbar-nav navbar-right">
+
+
+			      </ul>
+			    </div>
+			  </div><!-- /container -->
+			</div>
+			<!-- /Header -->
+			</head>
+			<body>
+			<!-- Main -->
+			<div class="container">
+
+			  <!-- upper section -->
+			  <div class="row">
+				<div class="col-sm-3">
+			      <!-- left -->
+            <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+            <hr>
+
+						<ul class="nav nav-stacked">
+										<li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+										 <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+										<hr></hr>
+										<h5>Level one</h5>
+										<hr></hr>
+										 <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										 <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+										 <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+										<hr></hr>
+										<h5>Level two</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										<li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										<h5>Level three</h5>
+										<hr></hr>
+										<li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+										<li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										<li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										<li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										<li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										<hr></hr>
+										 <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+										 <hr>
+										 <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+										 <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+										 <hr>
+										 <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+								 </ul>
+
+            <hr>
+
+			  	</div><!-- /span-3 -->
+			    <div class="col-sm-9">
+
+			      <!-- column 2 -->
+			       <h3><i class="fa fa-link"></i> Dropdown lists - <span class="label label-info">dropdown</span>
+			       	<span class="label label-info">fake dropdown</span>
+              <span class="label label-info">labels</span>
+			       </h3>
+
+			       <hr>
+
+				   <div class="row">
+				   	<div class="alert alert-info" role="alert"><i class="fa fa-comments"></i> Try to write automated scenarios for these ddl !</div>
+
+
+
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">level one</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-sm-2">
+              <select id="fnames">
+                  <option value="Ahmad">Ahmad</option>
+                  <option value="Mohammad">Mohammad</option>
+                  <option value="Easa">Easa</option>
+                  <option value="malek">Malek</option>
+              </select>
+            </div>
+            <div class="col-sm-1">
+              <span class="glyphicon glyphicon-plus"></span>
+            </div>
+            <div class="col-sm-2">
+              <select id="lnames">
+                  <option value="Ahmad">jalal</option>
+                  <option value="Mohammad">mostafa</option>
+                  <option value="Moath">alqadree</option>
+                  <option value="Abudalla">almaroni</option>
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <button id="generate-name" class="btn">see name</button>
+            </div>
+            <code id="hint" class="col-sm-3">check the names generator </code>
+            <div class="col-sm-5">
+              <div id="name-result"></div>
+            </div>
+            </div>
+
+        </div>
+<!-- end level -->
+
+
+
+		  		</div><!--/row-->
+
+
+
+			 	 </div><!--/row-->
+			  	<!-- /upper section -->
+
+
+			        </div><!--/panel content-->
+			      </div><!--/panel-->
+				<script type="text/javascript">
+
+  $("body").on('click','a[value="amman"]',function(){
+    $('blockquote').hide();
+    $('blockquote[value="amman"]').show();
+  });
+
+$("body").on('click','a[value="aqaba"]',function(){
+  $('blockquote').hide();
+    $('blockquote[value="aqaba"]').show();
+  });
+
+$("body").on('click','a[value="irbid"]',function(){
+  $('blockquote').hide();
+    $('blockquote[value="irbid"]').show();
+  });
+
+ $('body').on('click','#generate-name',function(){
+              var lname = $('#lnames option:selected').text();
+            var fname = $('#fnames option:selected').text();
+            $('#name-result').text('Hello ! my first name is : ' + fname  + ' and my family name is ' + lname);
+
+            });
+
+
+          $('body').on('click','a[href="#home"]',function(){
+              $('.done').html('<b><i class="fa fa-check-circle"></i> congratulations! you clicked on: ' + $(this).text() + '</b>')
+            });
+
+          $('body').on('click','a[href="#about"]',function(){
+              $('.done').html('<b><i class="fa fa-check-circle"></i> congratulations! you clicked on: ' + $(this).text() + '</b>')
+            });
+
+          $('body').on('click','a[href="#contact"]',function(){
+              $('.done').html('<b><i class="fa fa-check-circle"></i> congratulations! you clicked on: ' + $(this).text() + '</b>')
+            });
+
+
+            $('body').on('click','.h-dropdown button',function(){
+              $('.done').html('<b><i class="fa fa-hand-paper-o"></i> sorry this is not the target !</b>')
+            });
+
+
+       // make tab selected
+
+       $(document).ready(function(){
+        $links = $('.nav-stacked li a');
+        var url = (window.location.href).split('/');
+        $links.each(function(link){
+          if( ($(this).attr('href')) == url[3] ){
+            $(this).addClass('selected');
+          }
+        });
+       });
+
+</script>
+			<!-- /Main -->
+			<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><b>Aspire.jo</b></a></footer>
+			</body>
+
+			</html>

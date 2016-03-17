@@ -1,0 +1,289 @@
+
+			<!doctype html>
+			<html>
+			<head>
+				<title>Html - Dropdown lists</title>
+				<link rel="stylesheet" href="assets/bootstrap.min.css">
+				<link rel="stylesheet" href="assets/font-awesome.css">
+        <script src="assets/jquery.min.js"></script>
+          <script src="assets/jquery-ui.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+        <script src="assets/bootstrap.min.js"></script>
+
+				<style>
+					.navbar-static-top {
+			  margin-bottom:20px;
+			}
+
+			i {
+			  font-size:18px;
+			}
+
+			footer {
+			  margin-top:20px;
+			  padding-top:20px;
+			  padding-bottom:20px;
+			  background-color:#efefef;
+			  margin: 0px;
+			}
+    	.alert{
+    		display: none;
+    	}
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+.selected{
+	background-color: #eeeeee;
+	border-right: solid 3px #666;
+
+}
+				</style>
+
+
+				<!-- Header -->
+			<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			          <span class="icon-toggle"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-cog"></i> Automation Training site</a>
+			    </div>
+			    <div class="navbar-collapse collapse">
+			      <ul class="nav navbar-nav navbar-right">
+
+
+			      </ul>
+			    </div>
+			  </div><!-- /container -->
+			</div>
+			<!-- /Header -->
+			</head>
+			<body>
+			<!-- Main -->
+			<div class="container">
+
+			  <!-- upper section -->
+			  <div class="row">
+				<div class="col-sm-3">
+			      <!-- left -->
+			      <h3><i class="fa fa-folder-open"></i> Toolbox</h3>
+			      <hr>
+
+						<ul class="nav nav-stacked">
+										<li><a href="elements" id="htmelemnt-tab"><i class="fa fa-code"></i> Html Elements</a></li>
+										 <li><a href="practice" id="playwithelement-tab"><i class="fa fa-magic"></i> Play With Elements</a></li>
+										 <hr></hr>
+										 <h5>Level one</h5>
+										 <hr></hr>
+										 <li><a href="labelsandbuttons" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										 <li><a href="inputs" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="checkbox" id="checkbox-tab"><i class="fa fa-check-square-o larg"></i> Checkboxes</a></li>
+										 <li><a href="tables" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+										 <hr></hr>
+										 <h5>Level two</h5>
+										 <hr></hr>
+										 <li><a href="labelsandbuttons2" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons</a></li>
+										 <li><a href="inputs2" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced2" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown2" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="tables2" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										 <hr></hr>
+										 <h5>Level three</h5>
+										 <hr></hr>
+										 <li><a href="labelsandbuttons3" id="labelsandbtn-tab"><i class="fa fa-certificate larg"></i> Labels &amp; Buttons - level three</a></li>
+										 <li><a href="inputs3" id="inputs-tab"><i class="fa fa-keyboard-o larg"></i> Inputs</a></li>
+										 <li><a href="inputsadvanced3" id="inputsadvanced-tab"><i class="fa fa-plus-square-o larg"></i> Inputs - Advanced</a></li>
+										 <li><a href="dropdown3" id="dropdownlist-tab"><i class="fa fa-list larg"></i> Dropdown lists</a></li>
+										 <li><a href="tables3" id="tables-tab"><i class="fa fa-table larg"></i> Tables</a></li>
+
+										 <hr></hr>
+										 <li><a href="advanced" id="advancedtopic-tab"><i class="fa fa-plus larg"></i> Advanced Topics</a></li>
+										 <hr>
+										 <li><a href="savedata" id="data-tab"><i class="fa fa-newspaper-o"></i> Data</a></li>
+										 <li><a href="storage" id="storage-tab"><i class="fa fa-database"></i> Storage</a></li>
+										 <hr>
+										 <li><a href="webservices" id="webservices-tab" ><i class="fa fa-server"></i></i> Web services</a></li>
+								 </ul>
+
+			      <hr>
+
+			  	</div><!-- /span-3 -->
+			    <div class="col-sm-9">
+
+			      <!-- column 2 -->
+			       <h3><i class="fa fa-link"></i> Advanced - <span class="label label-info">ifream</span>
+			       	<span class="label label-info">Animation</span>
+              <span class="label label-info">Time out</span>
+              <span class="label label-info">Datepicker</span>
+			       </h3>
+
+			       <hr>
+
+				   <div class="row">
+				   	<div class="alert alert-info" role="alert"><i class="
+					glyphicon glyphicon-record"></i> Try to write automated scenarios for these ddl !</div>
+
+
+
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">ifream</h3>
+          </div>
+          <div class="panel-body">
+            <code class="col-sm-6"> provide us with first text have 'alert' class <br> in the following web page  : </code>
+             <iframe id="frame" src="http://localhost:8080/inputs"></iframe>
+            </div>
+
+        </div>
+<!-- end level -->
+
+				 <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Animation</h3>
+          </div>
+          <div class="panel-body">
+          	<div class="col-sm-12">
+            <code > after click on get message button , some notification will appear , can you catch it ?  </code>
+            <button class="btn pull-right"> get message</button>
+            </div>
+            		</br>
+            	<div class="col-sm-9">
+            		<span class="counter"></span>
+            	<div class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> warning , this message is too late !!</div>
+							</div>
+            </div>
+
+
+        </div>
+<!-- end level -->
+
+<div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Datepicker</h3>
+          </div>
+          <div class="panel-body">
+          	<div class="col-sm-12">
+            <code > fill the date input field using date picker , and assert your acction !  </code>
+            </div>
+            		</br>
+            	<div class="col-sm-9">
+            		<p>Date: <input type="text" id="datepicker"></p>
+							</div>
+
+            </div>
+            	<script type="text/javascript">
+
+					  $(document).ready(function(){
+					  $( "#datepicker" ).datepicker();
+					  });
+
+            	</script>
+
+        </div>
+<!-- end level -->
+
+<div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Dynamic panel</h3>
+          </div>
+          <div class="panel-body">
+          	<div class="col-sm-12">
+            <code > provide us with the sprint budget , note that :</code>
+            <li id='dev'> Dev range : 1000 - 2000</li>
+            <li id='qa'> QA range : 500 - 1000</li>
+            <li id='dev'> Teamlead range : 2000 - 6000</li>
+            <li id='dev'> overtime : 70 - 600</li>
+            </div>
+            		</br>
+            	<div class="col-sm-9">
+				 <ul class="list-group">
+				  <li class="list-group-item">Developers <span class="badge dev"></span></li>
+				  <li class="list-group-item">QA <span class="badge qa"></span></li>
+				  <li class="list-group-item">team lead <span class="badge teamlead"></span></li>
+				  <li class="list-group-item">overtime <span class="badge overtime"></span></li>
+
+				</ul>
+							</div>
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+        // random number
+        	function randomNumber(minimum, maximum){
+			    return Math.round( Math.random() * (maximum - minimum) + minimum);
+			}
+
+			var dev = randomNumber(1000, 2000);
+			var qa = randomNumber(500, 1100);
+			var teamlead = randomNumber(2000, 6000);
+			var overtime = randomNumber(70, 600);
+
+			$('.dev').text(dev + " $");
+			$('.qa').text(qa + " $");
+			$('.teamlead').text(teamlead + " $");
+			$('.overtime').text(overtime + " $");
+			});
+
+        </script>
+<!-- end level -->
+
+		  		</div><!--/row-->
+
+
+
+			 	 </div><!--/row-->
+			  	<!-- /upper section -->
+			 <script type="text/javascript">
+			 $('body').on('click','.pull-right',function(){
+			 	$('.counter').html('<img src="assets/loading.gif">');
+
+			 	setTimeout(function(){
+			 		clearInterval();
+			 			$('.counter').hide();
+			 			$('.alert-danger').fadeIn();
+			 	},3000);
+			 	setTimeout(function(){
+			 		clearInterval();
+			 			$('.counter').hide();
+			 			$('.alert-danger').fadeOut();
+			 	},7000);
+
+
+			 });
+
+			 // make tab selected
+
+			 $(document).ready(function(){
+			 	$links = $('.nav-stacked li a');
+			 	var url = (window.location.href).split('/');
+			 	$links.each(function(link){
+			 		if( ($(this).attr('href')) == url[3] ){
+			 			$(this).addClass('selected');
+			 		}
+			 	});
+			 });
+
+
+			 </script>
+
+			        </div><!--/panel content-->
+			      </div><!--/panel-->
+
+			<!-- /Main -->
+			<footer id="footer" class="text-center">created by automation team @ <a href="http://www.aspire.jo"><strong>Aspire.jo</strong></a></footer>
+			</body>
+
+			</html>
